@@ -20,7 +20,7 @@ ENV INITSYSTEM=on
 
 RUN ls
 
-WORKDIR /usr/src/app
+WORKDIR /usr/src/
 
 RUN ls
 
