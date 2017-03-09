@@ -25,7 +25,7 @@ WORKDIR /usr/local/bin
 RUN ls
 
 COPY app/ /usr/local/bin
-RUN ls /usr/local/bin/Adafruit_Python_DHT
+RUN ls /usr/local/bin/Adafruit_DHT
 
 
 
