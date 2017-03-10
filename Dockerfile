@@ -8,25 +8,12 @@ RUN apt-get -q update \
 		python python-dev python-pip python-virtualenv \
 		build-essential  \
 		curl \
-        git 
+        	git 
 
 
-RUN pip install paho-mqtt
-RUN sudo pip install adafruit_python_dht
+RUN pip install paho-mqtt		
 
-RUN ls
+WORKDIR /usr/src/app
 
-ENV INITSYSTEM=on
-
-RUN ls
-
-WORKDIR /usr/local/bin
-
-RUN ls
-
-COPY app/ /usr/local/bin
-RUN ls /usr/local/bin/Adafruit_DHT
-
-
-
-CMD ["python", "/usr/local/bin/main.py"]
+COPY app/ /usr/src/app
+CMD ["python", "/usr/src/app/main.py"]
