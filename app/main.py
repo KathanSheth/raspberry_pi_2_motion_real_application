@@ -40,7 +40,7 @@ def read_temperature_data():
 	humidity, temperature = Adafruit_DHT.read_retry(11,4)
 	return temperature
 
-publish temperature
+#publish temperature
 while 1:
 	t=read_temperature_data()
 	print "Publishing data"
