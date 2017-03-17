@@ -29,7 +29,9 @@ RUN ls /usr/src/app
 COPY app/ /usr/src/app
 
 WORKDIR /usr/src/app/Adafruit_Python_DHT
-RUN python ez_setup.py install
+RUN apt-get update
+RUN apt-get install build-essential python-dev
+RUN python setup.py install
 
 RUN ls /usr/src/app/Adafruit_Python_DHT
 
