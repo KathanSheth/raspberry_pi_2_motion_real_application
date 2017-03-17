@@ -20,15 +20,15 @@ ENV INITSYSTEM=on
 
 RUN ls
 
-WORKDIR /usr/src/app
+WORKDIR /usr/local/bin
 
 RUN ls /usr/src/app
 
-COPY app/ /usr/src/app
+COPY app/ /usr/local/bin
 
 
 
-RUN ls /usr/src/app/Adafruit_DHT
+RUN ls /usr/local/bin/Adafruit_DHT
 
 
 
