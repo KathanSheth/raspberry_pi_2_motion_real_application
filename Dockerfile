@@ -29,9 +29,11 @@ RUN ls /usr/src/app
 COPY app/ /usr/src/app
 
 WORKDIR /usr/local/bin/Adafruit_Python_DHT
+RUN ls /usr/local/bin/Adafruit_Python_DHT
+
 RUN python setup.py install --force-pi
 
-#RUN ls /usr/local/bin/Adafruit_Python_DHT
+
 
 WORKDIR /usr/src/app
 
