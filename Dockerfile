@@ -20,16 +20,16 @@ ENV INITSYSTEM=on
 
 RUN ls
 
-WORKDIR /usr/local/bin
+WORKDIR /usr/src/app
 
-RUN ls /usr/local/bin
+RUN ls /usr/src/app
 
-COPY app/ /usr/local/bin
-
-
-
-RUN ls /usr/local/bin/Adafruit_DHT
+COPY app/ /usr/src/app
 
 
 
-CMD ["python", "/usr/local/bin/main.py"]
+RUN ls /usr/src/app/Adafruit_Python_DHT
+
+
+
+CMD ["python", "/usr/src/app/main.py"]
