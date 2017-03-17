@@ -8,6 +8,7 @@ RUN apt-get -q update \
 		python python-dev python-pip python-virtualenv \
 		build-essential  \
 		curl \
+		python-openssl \
         git 
 
 
