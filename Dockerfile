@@ -14,7 +14,7 @@ RUN apt-get -q update \
 RUN pip install paho-mqtt
 RUN sudo pip install adafruit_python_dht
 
-RUN sudo python /usr/src/app/Adafruit_Python_DHT/setup.py install
+
 RUN ls
 
 ENV INITSYSTEM=on
@@ -27,7 +27,7 @@ RUN ls /usr/src/app
 
 COPY app/ /usr/src/app
 
-
+RUN sudo python Adafruit_Python_DHT/setup.py install
 
 RUN ls /usr/src/app/Adafruit_Python_DHT
 
