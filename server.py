@@ -12,10 +12,10 @@ print "Inside Humidity sensor"
 
 #read temperature
 def read_temp_data():
-	humidity, temperature = Adafruit_DHT.read_retry(11, 4)	
-	print humidity
-	return humidity
-
+	#humidity, temperature = Adafruit_DHT.read_retry(11, 4)	
+	#print humidity
+	#return humidity
+	return random.randint(-50, 100)
 #publish temperature
 while 1:
 	t=read_temp_data()
