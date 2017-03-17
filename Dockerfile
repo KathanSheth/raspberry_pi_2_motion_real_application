@@ -28,7 +28,7 @@ RUN git clone https://github.com/adafruit/Adafruit_Python_DHT.git
 
 #RUN ls /usr/src/app
 
-#COPY app/ /usr/src/app
+COPY app/ /usr/src/app
 
 WORKDIR /usr/src/app/Adafruit_Python_DHT
 RUN ls /usr/src/app/Adafruit_Python_DHT
