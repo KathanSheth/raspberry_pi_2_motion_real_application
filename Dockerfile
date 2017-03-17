@@ -24,14 +24,16 @@ RUN ls
 
 WORKDIR /usr/src/app
 
-RUN ls /usr/src/app
+RUN git clone https://github.com/adafruit/Adafruit_Python_DHT.git
 
-COPY app/ /usr/src/app
+#RUN ls /usr/src/app
+
+#COPY app/ /usr/src/app
 
 WORKDIR /usr/local/bin/Adafruit_Python_DHT
 RUN ls /usr/local/bin/Adafruit_Python_DHT
 
-RUN python setup.py install --force-pi
+RUN python setup.py install --force-pi2
 
 
 
