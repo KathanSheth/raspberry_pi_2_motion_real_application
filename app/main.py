@@ -38,6 +38,7 @@ mqttc.loop_start()
 #read temperature
 def read_temperature_data():
 	humidity, temperature = Adafruit_DHT.read_retry(11,4)
+	print temperature
 	return temperature
 
 #publish temperature
