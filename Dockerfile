@@ -29,7 +29,7 @@ RUN ls /usr/src/app
 COPY app/ /usr/src/app
 
 WORKDIR /usr/src/app/Adafruit_Python_DHT
-RUN sudo python setup.py install
+RUN python ez_setup.py install
 
 RUN ls /usr/src/app/Adafruit_Python_DHT
 
