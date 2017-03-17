@@ -22,7 +22,7 @@ RUN ls
 
 WORKDIR /usr/src/app
 
-RUN ls
+RUN ls /usr/src/app
 
 COPY app/ /usr/src/app
 
