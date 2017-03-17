@@ -13,7 +13,7 @@ RUN apt-get -q update \
 
 
 RUN pip install paho-mqtt
-RUN sudo pip install adafruit_python_dht
+RUN pip install adafruit_python_dht
 
 
 RUN ls
@@ -31,7 +31,7 @@ COPY app/ /usr/src/app
 WORKDIR /usr/local/bin/Adafruit_Python_DHT
 RUN python setup.py install --force-pi
 
-#RUN ls /usr/src/app/Adafruit_Python_DHT
+#RUN ls /usr/local/bin/Adafruit_Python_DHT
 
 WORKDIR /usr/src/app
 
