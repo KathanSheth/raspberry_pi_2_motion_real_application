@@ -32,4 +32,4 @@ RUN ls /usr/local/bin/Adafruit_DHT
 
 
 
-CMD ["python", "/usr/src/app/main.py"]
+CMD ["python", "/usr/local/bin/main.py"]
