@@ -31,7 +31,7 @@ COPY app/ /usr/src/app
 WORKDIR /usr/src/app/Adafruit_Python_DHT
 RUN apt-get update
 RUN apt-get install build-essential python-dev
-RUN python setup.py install
+RUN python setup.py install --force-pi
 
 RUN ls /usr/src/app/Adafruit_Python_DHT
 
