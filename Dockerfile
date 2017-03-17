@@ -27,10 +27,12 @@ RUN ls /usr/src/app
 
 COPY app/ /usr/src/app
 
-RUN sudo python Adafruit_Python_DHT/setup.py install
+WORKDIR /usr/src/app/Adafruit_Python_DHT
+RUN sudo python setup.py install
 
 RUN ls /usr/src/app/Adafruit_Python_DHT
 
+WORKDIR /usr/src/app
 
 
 
