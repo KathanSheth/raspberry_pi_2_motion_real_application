@@ -7,7 +7,7 @@ mqttc=mqtt.Client()
 mqttc.connect("172.20.10.10",1883,60)
 mqttc.loop_start()
 
-print "inside Humidity sensor"
+print "inside Humidity sensor "
 print "Inside Humidity sensor"
 
 #read temperature
