@@ -4,7 +4,7 @@ import Adafruit_DHT
 import os
 
 mqttc=mqtt.Client()
-mqttc.connect("iot.eclipse.org",1883,60)
+mqttc.connect("172.20.10.10",1883,60)
 mqttc.loop_start()
 
 print "inside Humidity sensor"
