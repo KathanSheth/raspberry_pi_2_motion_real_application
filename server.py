@@ -19,7 +19,7 @@ def read_temp_data():
 #publish temperature
 while 1:
 	t=read_temp_data()
-	print "Publishing Humidity data "
+	print "Publish Humidity data "
 	device_uuid=os.environ['RESIN_DEVICE_UUID'];
 	#print device_uuid
 	print t
